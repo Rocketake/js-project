@@ -1,0 +1,57 @@
+:root {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+
+  color: var(--black);
+  background-color: var(--white);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --black: #292929;
+  --white: #f0f0f0;
+  --accent-green: #00b068;
+  --light-grey: #e4e5e6;
+  --light-accent: #bcdfd1;
+  --hover-green: #009156;
+  --hover-grey: #bbbbbb;
+  --error: #e74a3b;
+
+  --font-family: 'Poppins', sans-serif;
+  --second-family: 'Impact', sans-serif;
+  --third-family: 'Montserrat', sans-serif;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.section {
+  padding-top: 80px;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 124px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section {
+    padding-top: 164px;
+  }
+}
